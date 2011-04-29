@@ -1,0 +1,20 @@
+set complete=tl
+set focuscontent
+set editor=/Applications/MacVim.app/Contents/MacOS/MacVim
+
+set gui=noaddons,nobookmarks,menu,nonavigation,tabs
+
+set noscrollbars
+
+set hintchars="jfhgurkdie"
+
+hi -append Hint text-transform: uppercase;
+
+set status=input,location,position
+
+hi Hint font-family: monospace; font-size: medium; font-weight: bold; text-transform: uppercase; line-height: 1; color: black; background-color: #5FF; border-color: ButtonShadow; border-width: 1px; border-style: solid; padding: 1px; z-index: 99999; hi -append CompDesc color: #272; hi -append StatusLine color: #44A;
+
+vmap <silent> <C-g> y<Esc><Esc>P
+
+com! -complete=search -nargs=+ os :t <args> com! -complete=file -nargs=+ of :o <args> nmap ,s :os nmap ,f :of nmap ,b :open * nmap ,h :open ^
+

@@ -1,0 +1,17 @@
+/*
+/.*
+
+!/.gitignore
+!/.gitconfig
+!/.gitmodules
+
+!/.vimrc
+!/.gvimrc
+!/.vim
+/.vim/bundle
+!/.vimperatorrc
+
+!/.tmux.conf
+
+!/.irbrc
+
