@@ -29,6 +29,7 @@ Bundle 'git://github.com/tpope/vim-surround.git'
 Bundle 'git://github.com/richleland/vim-yankring.git'
 Bundle 'git://github.com/mattn/zencoding-vim.git'
 Bundle 'ref.vim'
+Bundle 'Gist.vim'
 
 "}}}
 
