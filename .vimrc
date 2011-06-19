@@ -1,6 +1,4 @@
 "---------------------------------------------------------------------------
-" vimrc
-"---------------------------------------------------------------------------
 
 " vundle.vim {{{1
 filetype off
@@ -10,7 +8,7 @@ filetype on
 
 " 使っているプラグイン {{{2
 "
-Bundle 'git://github.com/mattn/gist-vim.git'
+"Bundle 'git://github.com/mattn/gist-vim.git'
 Bundle 'git://github.com/motemen/git-vim.git'
 Bundle 'git://github.com/Shougo/neocomplcache.git'
 Bundle 'git://github.com/msanders/snipmate.vim.git'
@@ -28,8 +26,8 @@ Bundle 'git://github.com/Shougo/vimshell.git'
 Bundle 'git://github.com/tpope/vim-surround.git'
 Bundle 'git://github.com/richleland/vim-yankring.git'
 Bundle 'git://github.com/mattn/zencoding-vim.git'
-Bundle 'ref.vim'
-Bundle 'Gist.vim'
+Bundle 'git://github.com/thinca/vim-ref.git'
+Bundle 'git://github.com/vim-scripts/Lucius.git'
 
 "}}}
 
@@ -58,7 +56,7 @@ set ruler
 " タブや改行を表示 (nolist:非表示)
 set list
 " どの文字でタブや改行を表示するかを設定
-set listchars=tab:>-,trail:-,extends:@,eol:<
+set listchars=tab:>-,trail:-,extends:@,eol:$
 " 長い行を折り返さないで表示 (wrap:折り返す)
 set nowrap
 " 常にステータス行を表示
@@ -74,7 +72,7 @@ set showcmd
 " タイトルを表示
 set title
 " 画面を黒地に白にする (次行の先頭の " を削除すれば有効になる)
-colorscheme evening
+"colorscheme evening
 " 背景が明るいとき用
 set background=light
 " 全角スペースの表示
@@ -103,7 +101,7 @@ set tabstop=2 shiftwidth=2 softtabstop=0
 "行頭の余白内で Tab を打ち込むと、'shiftwidth' の数だけインデントする
 set smarttab
 " タブをスペースに展開する(noexpandtab:展開しない)
-set expandtab
+set noexpandtab
 " 自動的にインデントする (noautoindent:インデントしない)
 set autoindent
 set smartindent
@@ -334,10 +332,10 @@ autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
 
 "---------------------------------------------------------------------------
 " for Gist.vim {{{2
-let g:gist_clip_command = 'xclip -selection clipboard'
-let g:gist_detect_filetype = 1
-let g:gist_open_browser_after_post = 1
-let g:gist_browser_command = 'firefox %URL% &amp;'
+"let g:gist_clip_command = 'xclip -selection clipboard'
+"let g:gist_detect_filetype = 1
+"let g:gist_open_browser_after_post = 1
+"let g:gist_browser_command = 'firefox %URL% &amp;'
 "}}}
 
 "---------------------------------------------------------------------------
