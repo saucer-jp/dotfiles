@@ -4,7 +4,7 @@
 " フォント設定:
 "
 set antialias              " アンチエイリアシング
-set guifont=Bitstream\ Vera\ Sans\ Mono
+set guifont=Osaka-mono:h14,Bitstream\ Vera\ Sans\ Mono
 
 "---------------------------------------------------------------------------
 " ウインドウに関する設定:
@@ -12,9 +12,9 @@ set guifont=Bitstream\ Vera\ Sans\ Mono
 "set transparency=15        " 半透明
 set guioptions-=T          " ツールバー削除
 " ウインドウの幅
-set columns=100
+set columns=230
 " ウインドウの高さ
-set lines=80
+set lines=60
 " コマンドラインの高さ(GUI使用時)
 set cmdheight=2
 " 画面を黒地に白にする (次行の先頭の " を削除すれば有効になる)

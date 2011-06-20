@@ -73,6 +73,7 @@ set showcmd
 set title
 " 画面を黒地に白にする (次行の先頭の " を削除すれば有効になる)
 "colorscheme evening
+colorscheme Lucius 
 " 背景が明るいとき用
 set background=light
 " 全角スペースの表示
@@ -97,7 +98,7 @@ set ttyfast
 " vi互換をOFFにする
 set nocompatible
 " softtabstopはTabキー押し下げ時の挿入される空白の量，0の場合はtabstopと同じ，BSにも影響する
-set tabstop=2 shiftwidth=2 softtabstop=0
+set tabstop=4 shiftwidth=4 softtabstop=0
 "行頭の余白内で Tab を打ち込むと、'shiftwidth' の数だけインデントする
 set smarttab
 " タブをスペースに展開する(noexpandtab:展開しない)
@@ -320,6 +321,7 @@ nnoremap [TagJump]l   :<C-u>tags<CR> " 履歴一覧
 let g:rails_level=4
 let g:rails_default_file="app/controllers/application.rb"
 let g:rails_default_database="sqlite3"
+autocmd User Rails* set sw=4 sts=4 noet
 "}}}
 
 "---------------------------------------------------------------------------
