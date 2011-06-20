@@ -56,7 +56,7 @@ set ruler
 " タブや改行を表示 (nolist:非表示)
 set list
 " どの文字でタブや改行を表示するかを設定
-set listchars=tab:>-,trail:-,extends:@,eol:$
+set listchars=tab:>.,trail:-,extends:@,eol:$
 " 長い行を折り返さないで表示 (wrap:折り返す)
 set nowrap
 " 常にステータス行を表示
@@ -73,9 +73,10 @@ set showcmd
 set title
 " 画面を黒地に白にする (次行の先頭の " を削除すれば有効になる)
 "colorscheme evening
-colorscheme Lucius 
+colorscheme lucius " (GUI使用時)
 " 背景が明るいとき用
-set background=light
+"set background=light
+set background=dark
 " 全角スペースの表示
 highlight ZenkakuSpace cterm=underline ctermfg=lightblue guibg=darkgray
 match ZenkakuSpace /　/
@@ -274,6 +275,14 @@ vnoremap /r "xy:%s/<C-R>=escape(@x, '\\/.*$^?[]')<CR>//gc<Left><Left><Left>
 
 nnoremap [General]ce :colorscheme evening<CR>
 nnoremap [General]cd :colorscheme desert<CR>
+" バッファ周り
+nmap <silent> <C-l> :bnext<CR>
+nmap <silent> <C-h> :bprevious<CR>
+" ノーマルモード中でもエンターキーで改行挿入でノーマルモードに戻る
+noremap <CR> A<CR><ESC>
+" ビジュアルモードでのUキー無効
+vnoremap u ""
+vnoremap U ""
 
 " エンコーディング関連 {{{3
 command! Euc edit ++enc=euc-jp
@@ -429,14 +438,29 @@ let g:neocomplcache_min_syntax_length = 3
 " 辞書ファイルの場所
 let g:neocomplcache_snippets_dir = '~/.vim/snippets'
 " Tabで補完を開始する
-imap <silent> <Tab> <Plu>(neocomplcache_snippets_expand)
-smap <silent> <Tab> <Plu>(neocomplcache_snippets_expand)
+"imap <silent> <Tab> <Plu>(neocomplcache_snippets_expand)
+"smap <silent> <Tab> <Plu>(neocomplcache_snippets_expand)
 " 前回行われた補完をキャンセルする
 inoremap <expr><C-g> neocomplcache#undo_completion()
 " 補完候補のなかから、共通する部分を補完する
 inoremap <expr><C-l> neocomplcache#complete_common_string()
 " 現在選択している候補を確定する
 inoremap <expr><C-y> neocomplcache#close_popup()
+" Tab start
+function InsertTabWrapper()
+    if pumvisible()
+        return "\<c-n>"
+    endif
+    let col = col('.') - 1
+    if !col || getline('.')[col - 1] !~ '\k\|<\|/'
+        return "\<tab>"
+    elseif exists('&omnifunc') && &omnifunc == ''
+        return "\<c-n>"
+    else
+        return "\<c-x>\<c-o>"
+    endif
+endfunction
+inoremap <tab> <c-r>=InsertTabWrapper()<cr>
 
 "}}}
 

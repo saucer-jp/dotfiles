@@ -4,7 +4,7 @@
 " フォント設定:
 "
 set antialias              " アンチエイリアシング
-set guifont=Osaka-mono:h14,Bitstream\ Vera\ Sans\ Mono
+set guifont=Bitstream\ Vera\ Sans\ Mono,Osaka-mono:h14
 
 "---------------------------------------------------------------------------
 " ウインドウに関する設定:
