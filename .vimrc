@@ -26,7 +26,7 @@ Bundle 'git://github.com/Shougo/vimshell.git'
 Bundle 'git://github.com/tpope/vim-surround.git'
 Bundle 'git://github.com/richleland/vim-yankring.git'
 "Bundle 'git://github.com/mattn/zencoding-vim.git'
-Bundle 'git://github.com/saucer-jp/zencoding-vim.git'
+Bundle 'https://saucer-jp@github.com/saucer-jp/zencoding-vim.git'
 Bundle 'git://github.com/thinca/vim-ref.git'
 Bundle 'git://github.com/vim-scripts/Lucius.git'
 
