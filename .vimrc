@@ -128,7 +128,7 @@ set scrolloff=5
 " ビープをならさない
 set vb t_vb=
 " vimとクリップボードを共通に利用
-"set clipboard=unnamed,autoselect
+set clipboard=unnamed,autoselect
 " ファイルタイプによるインデント
 filetype indent on
 " ファイルタイプごとのプラグイン
