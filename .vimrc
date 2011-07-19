@@ -57,7 +57,7 @@ set ruler
 " タブや改行を表示 (nolist:非表示)
 set list
 " どの文字でタブや改行を表示するかを設定
-set listchars=tab:>-,trail:\ ,extends:@,eol:$
+set listchars=tab:>~,trail:\ ,extends:@,eol:$
 " 長い行を折り返さないで表示 (wrap:折り返す)
 set nowrap
 " 常にステータス行を表示
@@ -380,10 +380,10 @@ endfunction
 let g:unite_enable_start_insert = 1
 
 " インサート／ノーマルどちらからでも呼び出せるようにキーマップ
-nnoremap <silent> <C-f> :<C-u>UniteWithBufferDir -buffer-name=files file<CR>
-inoremap <silent> <C-f> <ESC>:<C-u>UniteWithBufferDir -buffer-name=files file<CR>
-nnoremap <silent> <C-b> :<C-u>Unite buffer file_mru<CR>
-inoremap <silent> <C-b> <ESC>:<C-u>Unite buffer file_mru<CR>
+noremap <silent> <C-f> :<C-u>UniteWithBufferDir -buffer-name=files file<CR>
+noremap <silent> <C-f> <ESC>:<C-u>UniteWithBufferDir -buffer-name=files file<CR>
+noremap <silent> <C-b> :<C-u>Unite buffer file_mru<CR>
+noremap <silent> <C-b> <ESC>:<C-u>Unite buffer file_mru<CR>
 
 " バッファ一覧
 nnoremap [General]b :<C-u>Unite buffer<CR>
