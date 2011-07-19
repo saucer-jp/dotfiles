@@ -29,6 +29,7 @@ Bundle 'git://github.com/richleland/vim-yankring.git'
 Bundle 'https://saucer-jp@github.com/saucer-jp/zencoding-vim.git'
 Bundle 'git://github.com/thinca/vim-ref.git'
 Bundle 'git://github.com/vim-scripts/Lucius.git'
+Bundle 'git://github.com/t9md/vim-textmanip.git'
 
 "}}}
 
@@ -163,7 +164,7 @@ set browsedir=buffer
 " コマンド補完を開始するキー
 "set wildchar=<tab>
 " リスト表示，最長マッチ
-set wildmode=list:full
+set wildmode=list:longest,full
 " コマンド・検索パターンの履歴数
 set history=1000
 " 補完に辞書ファイル追加
@@ -256,7 +257,7 @@ inoremap <C-W> <C-g>u<C-w>
 inoremap <C-U> <C-g>u<C-u>
 inoremap <C-K> <C-o>D<Esc>
 " 検索後のハイライトを消す
-nnoremap <Esc><Esc> :nohlsearch<CR><Esc>
+nnoremap <silent> <Esc><Esc> :nohlsearch<CR><Esc>
 " 日付の入力補助
 inoremap <expr> ,df strftime('%Y-%m-%dT%H:%M:%S')
 inoremap <expr> ,dd strftime('%Y-%m-%d')
@@ -405,6 +406,9 @@ function! s:unite_my_settings()
     nnoremap <silent><buffer> <ESC><ESC> q
     imap <silent><buffer> <ESC><ESC> <ESC>q
 endfunction
+" Macで/Volumesを履歴に残す
+call unite#util#set_default('g:unite_source_file_mru_ignore_pattern',
+      \'\~$\|\.\%(o|exe|dll|bak|sw[po]\)$\|\%(^\|/\)\.\%(hg\|git\|bzr\|svn\)\%($\|/\)\|^\%(\\\\\|/mnt/\|/media/\)')
 "}}}
 
 "---------------------------------------------------------------------------
@@ -527,10 +531,23 @@ autocmd FileType ruby let g:surround_{char2nr('p')} = "\1method\1 do \2args\r..*
 autocmd FileType ruby let g:surround_{char2nr('P')} = "\1method\1 {\2args\r..*\r|&|\2 \r }"
 
 " }}}
-"
+
 "---------------------------------------------------------------------------
 " for YamkRing.vim {{{2
 set viminfo+=!
+"}}}
+
+"---------------------------------------------------------------------------
+" for Textmanip.vim {{{2
+
+vmap <D-d> <Plug>(Textmanip.duplicate_selection_v)
+nmap <D-d> <Plug>(Textmanip.duplicate_selection_n)
+
+vmap <C-j> <Plug>(Textmanip.move_selection_down)
+vmap <C-k> <Plug>(Textmanip.move_selection_up)
+vmap <C-h> <Plug>(Textmanip.move_selection_left)
+vmap <C-l> <Plug>(Textmanip.move_selection_right)
+
 "}}}
 
 " }}}
