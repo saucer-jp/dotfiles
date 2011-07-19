@@ -30,6 +30,7 @@ Bundle 'https://saucer-jp@github.com/saucer-jp/zencoding-vim.git'
 Bundle 'git://github.com/thinca/vim-ref.git'
 Bundle 'git://github.com/vim-scripts/Lucius.git'
 Bundle 'git://github.com/t9md/vim-textmanip.git'
+Bundle 'git://github.com/hokaccha/vim-css3-syntax.git'
 
 "}}}
 
