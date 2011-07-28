@@ -18,8 +18,7 @@ set lines=60
 " コマンドラインの高さ(GUI使用時)
 set cmdheight=2
 " 画面を黒地に白にする (次行の先頭の " を削除すれば有効になる)
-"colorscheme evening " (GUI使用時)
-colorscheme lucius " (GUI使用時)
+colorscheme darkspectrum " (GUI使用時)
 
 "set splitbelow             " 横分割したら新しいウィンドウは下に
 "set splitright             " 縦分割したら新しいウィンドウは右に

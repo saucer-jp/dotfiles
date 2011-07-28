@@ -28,10 +28,13 @@ Bundle 'git://github.com/richleland/vim-yankring.git'
 "Bundle 'git://github.com/mattn/zencoding-vim.git'
 Bundle 'https://saucer-jp@github.com/saucer-jp/zencoding-vim.git'
 Bundle 'git://github.com/thinca/vim-ref.git'
-Bundle 'git://github.com/vim-scripts/Lucius.git'
 Bundle 'git://github.com/t9md/vim-textmanip.git'
 Bundle 'git://github.com/hokaccha/vim-css3-syntax.git'
-Bundle 'git://github.com/tpope/vim-haml.git'
+"Bundle 'git://github.com/tpope/vim-haml.git'
+Bundle 'git://github.com/cakebaker/scss-syntax.vim.git'
+
+Bundle 'git://github.com/vim-scripts/Lucius.git'
+Bundle 'git://github.com/vim-scripts/darkspectrum.git'
 
 "}}}
 
@@ -60,7 +63,7 @@ set ruler
 " タブや改行を表示 (nolist:非表示)
 set list
 " どの文字でタブや改行を表示するかを設定
-set listchars=tab:>~,trail:\ ,extends:@,eol:$
+set listchars=tab:>.,trail:\ ,extends:@,eol:$
 " 長い行を折り返さないで表示 (wrap:折り返す)
 set nowrap
 " 常にステータス行を表示
@@ -76,8 +79,7 @@ set showcmd
 " タイトルを表示
 set title
 " 画面を黒地に白にする (次行の先頭の " を削除すれば有効になる)
-"colorscheme evening
-colorscheme lucius " (GUI使用時)
+colorscheme evening
 " 背景が明るいとき用
 "set background=light
 set background=dark
