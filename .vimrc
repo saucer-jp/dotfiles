@@ -32,6 +32,8 @@ Bundle 'git://github.com/t9md/vim-textmanip.git'
 Bundle 'git://github.com/hokaccha/vim-css3-syntax.git'
 "Bundle 'git://github.com/tpope/vim-haml.git'
 Bundle 'git://github.com/cakebaker/scss-syntax.vim.git'
+Bundle 'git://github.com/dag/css_color.vim.git'
+Bundle 'git://github.com/othree/html5.vim.git'
 
 Bundle 'git://github.com/vim-scripts/Lucius.git'
 Bundle 'git://github.com/vim-scripts/darkspectrum.git'
