@@ -289,8 +289,10 @@ nmap <silent> <C-h> :bprevious<CR>
 " ノーマルモード中でもエンターキーで改行挿入でノーマルモードに戻る
 noremap <CR> A<CR><ESC>
 " ビジュアルモードでのUキー無効
-vnoremap u ""
-vnoremap U ""
+vnoremap u <Nop>
+vnoremap U <Nop>
+" インサートモードでの<C-@>無効
+inoremap <C-@> <ESC>
 
 " エンコーディング関連 {{{3
 command! Euc edit ++enc=euc-jp
