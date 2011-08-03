@@ -577,6 +577,10 @@ endfunction
 command! -bar -bang -nargs=? -complete=file Scouter
 \        echo Scouter(empty(<q-args>) ? $MYVIMRC : expand(<q-args>), <bang>0)
 " }}}
+"
+" FileType {{{2
+autocmd User *.ruby,*.erb,*.yaml,*.haml set expandtab softtabstop=0 shiftwidth=2 tabstop=2
+" }}}
 
 " }}}
 
