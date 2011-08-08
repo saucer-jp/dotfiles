@@ -107,7 +107,7 @@ set ttyfast
 " vi互換をOFFにする
 set nocompatible
 " softtabstopはTabキー押し下げ時の挿入される空白の量，0の場合はtabstopと同じ，BSにも影響する
-set tabstop=4 shiftwidth=4 softtabstop=0
+set tabstop=2 shiftwidth=2 softtabstop=0
 "行頭の余白内で Tab を打ち込むと、'shiftwidth' の数だけインデントする
 set smarttab
 " タブをスペースに展開する(noexpandtab:展開しない)
@@ -340,7 +340,7 @@ nnoremap [TagJump]l   :<C-u>tags<CR> " 履歴一覧
 let g:rails_level=4
 let g:rails_default_file="app/controllers/application.rb"
 let g:rails_default_database="sqlite3"
-autocmd User Rails* set sw=4 sts=4 noet
+autocmd User Rails* set sw=2 sts=2 noet
 "}}}
 
 "---------------------------------------------------------------------------
@@ -579,7 +579,7 @@ command! -bar -bang -nargs=? -complete=file Scouter
 " }}}
 "
 " FileType {{{2
-autocmd User *.ruby,*.erb,*.yaml,*.haml set expandtab softtabstop=0 shiftwidth=2 tabstop=2
+autocmd User *.rb,*.erb,*.yaml,*.haml set expandtab softtabstop=0 shiftwidth=2 tabstop=2
 " }}}
 
 " }}}
