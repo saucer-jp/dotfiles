@@ -90,6 +90,8 @@ highlight ZenkakuSpace cterm=underline ctermfg=lightblue guibg=darkgray
 match ZenkakuSpace /　/
 " カーソル行をハイライト
 set cursorline
+" カーソル桁をハイライト
+set cursorcolumn
 " カレントウィンドウにのみ罫線を引く
 augroup cch
     autocmd! cch

@@ -44,15 +44,17 @@ set guioptions+=a
 " colorscheme darkspectrum 上書き:
 
 " 通常の文字、背景色
-hi Normal		guifg=#efefef guibg=#191919
+hi Normal					guifg=#efefef		guibg=#222222
 " インクリメンタル検索ハイライト
-hi IncSearch	guifg=#efca00 guibg=#000000
+hi IncSearch			guifg=#efca00		guibg=#000000
 " 検索結果ハイライト
-hi Search		guifg=#FFFFFF guibg=#aa0000 
+hi Search					guifg=#FFFFFF		guibg=#aa0000
 " tab
-hi SpecialKey	guifg=#444444
+hi SpecialKey			guifg=#444444
 " コメントアウト
-hi Comment		guifg=#555555
+hi Comment				guifg=#555555
 " 変数とか命令文
-hi Statement        guifg=#E1EBA7
-hi PreProc          guifg=#E1EBA7
+hi Statement			guifg=#E1EBA7
+hi PreProc				guifg=#E1EBA7
+" カーソル桁
+hi CursorColumn		guibg=#000000
