@@ -579,7 +579,7 @@ command! -bar -bang -nargs=? -complete=file Scouter
 " }}}
 "
 " FileType {{{2
-autocmd User *.rb,*.erb,*.yaml,*.haml set expandtab softtabstop=0 shiftwidth=2 tabstop=2
+autocmd User *.rb,*.erb,*.yml,*.haml set expandtab softtabstop=0 shiftwidth=2 tabstop=2
 " }}}
 
 " }}}
