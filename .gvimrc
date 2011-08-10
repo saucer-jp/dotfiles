@@ -44,7 +44,7 @@ set guioptions+=a
 " colorscheme darkspectrum 上書き:
 
 " 通常の文字、背景色
-hi Normal					guifg=#efefef		guibg=#222222
+hi Normal					guifg=#efefef		guibg=#1c1c1c
 " インクリメンタル検索ハイライト
 hi IncSearch			guifg=#efca00		guibg=#000000
 " 検索結果ハイライト
