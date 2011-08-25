@@ -342,7 +342,8 @@ nnoremap [TagJump]l   :<C-u>tags<CR> " 履歴一覧
 let g:rails_level=4
 let g:rails_default_file="app/controllers/application.rb"
 let g:rails_default_database="sqlite3"
-autocmd User Rails* set sw=2 sts=2 noet
+"autocmd User Rails* set sw=2 sts=2 noet
+autocmd User *.rb,*.erb,*.yml,*.haml set expandtab softtabstop=0 shiftwidth=2 tabstop=2
 "}}}
 
 "---------------------------------------------------------------------------
@@ -581,7 +582,8 @@ command! -bar -bang -nargs=? -complete=file Scouter
 " }}}
 "
 " FileType {{{2
-autocmd User *.rb,*.erb,*.yml,*.haml set expandtab softtabstop=0 shiftwidth=2 tabstop=2
+"autocmd User *.rb,*.erb,*.yml,*.haml set expandtab softtabstop=0 shiftwidth=2 tabstop=2
+autocmd User *.scss,*.css set noexpandtab softtabstop=2 shiftwidth=2 tabstop=2
 " }}}
 
 " }}}
