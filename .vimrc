@@ -583,7 +583,7 @@ command! -bar -bang -nargs=? -complete=file Scouter
 "
 " FileType {{{2
 "autocmd User *.rb,*.erb,*.yml,*.haml set expandtab softtabstop=0 shiftwidth=2 tabstop=2
-autocmd User *.scss,*.css set noexpandtab softtabstop=2 shiftwidth=2 tabstop=2
+autocmd User *.scss,*.css,*.js set noexpandtab softtabstop=2 shiftwidth=2 tabstop=2
 " }}}
 
 " }}}
