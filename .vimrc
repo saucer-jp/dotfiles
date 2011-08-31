@@ -497,7 +497,7 @@ nnoremap [General]gp :<C-u>Git push
 
 "---------------------------------------------------------------------------
 " for zencoding.vim {{{2
-let g:user_zen_expandabbr_key = '<c-z>'
+let g:user_zen_expandabbr_key = '<C-Enter>'
 " }}}
 
 "---------------------------------------------------------------------------
