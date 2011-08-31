@@ -58,3 +58,5 @@ hi Statement			guifg=#E1EBA7
 hi PreProc				guifg=#E1EBA7
 " カーソル桁
 hi CursorColumn		guibg=#000000
+"行番号部分
+hi LineNr					guifg=#999999		guibg=#292929
