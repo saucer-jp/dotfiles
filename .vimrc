@@ -112,7 +112,8 @@ set tabstop=2 shiftwidth=2 softtabstop=0
 "行頭の余白内で Tab を打ち込むと、'shiftwidth' の数だけインデントする
 set smarttab
 " タブをスペースに展開する(noexpandtab:展開しない)
-set noexpandtab
+"set noexpandtab
+set expandtab
 " 自動的にインデントする (noautoindent:インデントしない)
 set autoindent
 set smartindent
@@ -342,7 +343,7 @@ let g:rails_level=4
 let g:rails_default_file="app/controllers/application.rb"
 let g:rails_default_database="sqlite3"
 "autocmd User Rails* set sw=2 sts=2 noet
-autocmd User *.rb,*.erb,*.yml,*.haml set expandtab softtabstop=0 shiftwidth=2 tabstop=2
+"autocmd User *.rb,*.erb,*.yml,*.haml set expandtab softtabstop=0 shiftwidth=2 tabstop=2
 "}}}
 
 "---------------------------------------------------------------------------
@@ -584,7 +585,7 @@ command! -bar -bang -nargs=? -complete=file Scouter
 "
 " FileType {{{2
 "autocmd User *.rb,*.erb,*.yml,*.haml set expandtab softtabstop=0 shiftwidth=2 tabstop=2
-autocmd User *.scss,*.css,*.js set noexpandtab softtabstop=2 shiftwidth=2 tabstop=2
+"autocmd User *.scss,*.css,*.js set noexpandtab softtabstop=2 shiftwidth=2 tabstop=2
 " }}}
 
 " }}}
