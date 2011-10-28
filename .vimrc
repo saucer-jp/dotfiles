@@ -9,13 +9,13 @@ filetype on
 " 使っているプラグイン {{{2
 "
 "Bundle 'git://github.com/mattn/gist-vim.git'
+"Bundle 'git://github.com/msanders/snipmate.vim.git'
+Bundle 'git://github.com/Shougo/vimfiler.git'
 Bundle 'git://github.com/motemen/git-vim.git'
 Bundle 'git://github.com/Shougo/neocomplcache.git'
-Bundle 'git://github.com/msanders/snipmate.vim.git'
 Bundle 'git://github.com/Shougo/unite.vim.git'
 Bundle 'git://github.com/tpope/vim-cucumber.git'
 Bundle 'git://github.com/tpope/vim-endwise.git'
-Bundle 'git://github.com/Shougo/vimfiler.git'
 Bundle 'git://github.com/kana/vim-metarw.git'
 Bundle 'git://github.com/kana/vim-metarw-git.git'
 Bundle 'git://github.com/Shougo/vimproc.git'
