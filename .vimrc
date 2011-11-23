@@ -210,6 +210,10 @@ nnoremap j gj
 nnoremap k gk
 vnoremap j gj
 vnoremap k gk
+nnoremap gl <C-w>l
+nnoremap gh <C-w>h
+nnoremap gj <C-w>j
+nnoremap gk <C-w>k
 " vimrc
 nnoremap [General]. :<C-u>edit $MYVIMRC<Enter>
 nnoremap [General]S. :<C-u>source $MYVIMRC<Enter>
