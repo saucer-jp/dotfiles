@@ -27,7 +27,7 @@ Bundle 'git://github.com/tpope/vim-surround.git'
 Bundle 'git://github.com/richleland/vim-yankring.git'
 Bundle 'git://github.com/mattn/zencoding-vim.git'
 Bundle 'git://github.com/thinca/vim-ref.git'
-Bundle 'git://github.com/t9md/vim-textmanip.git'
+"Bundle 'git://github.com/t9md/vim-textmanip.git'
 Bundle 'git://github.com/hokaccha/vim-css3-syntax.git'
 "Bundle 'git://github.com/tpope/vim-haml.git'
 Bundle 'git://github.com/cakebaker/scss-syntax.vim.git'
@@ -82,10 +82,9 @@ set showcmd
 " タイトルを表示
 set title
 " 画面を黒地に白にする (次行の先頭の " を削除すれば有効になる)
-colorscheme evening
+set background=dark
 " 背景が明るいとき用
 "set background=light
-set background=dark
 " 全角スペースの表示
 highlight ZenkakuSpace cterm=underline ctermfg=lightblue guibg=darkgray
 match ZenkakuSpace /　/
@@ -404,15 +403,15 @@ noremap <silent> <C-b> :<C-u>Unite buffer file_mru<CR>
 noremap <silent> <C-b> <ESC>:<C-u>Unite buffer file_mru<CR>
 
 " バッファ一覧
-nnoremap [General]b :<C-u>Unite buffer<CR>
+"nnoremap [General]b :<C-u>Unite buffer<CR>
 " ファイル一覧
-nnoremap [General]f :<C-u>UniteWithBufferDir -buffer-name=files file<CR>
+"nnoremap [General]f :<C-u>UniteWithBufferDir -buffer-name=files file<CR>
 " レジスタ一覧
-nnoremap [General]r :<C-u>Unite -buffer-name=register register<CR>
+"nnoremap [General]r :<C-u>Unite -buffer-name=register register<CR>
 " 最近使用したファイル一覧
-nnoremap [General]m :<C-u>Unite file_mru<CR>
+"nnoremap [General]m :<C-u>Unite file_mru<CR>
 " 全部乗せ
-nnoremap [General]a :<C-u>UniteWithBufferDir -buffer-name=files buffer file_mru bookmark file<CR>
+"nnoremap [General]a :<C-u>UniteWithBufferDir -buffer-name=files buffer file_mru bookmark file<CR>
 
 " unite.vim上でのキーマッピング
 autocmd FileType unite call s:unite_my_settings()
@@ -559,13 +558,13 @@ set viminfo+=!
 "---------------------------------------------------------------------------
 " for Textmanip.vim {{{2
 
-vmap <D-d> <Plug>(Textmanip.duplicate_selection_v)
-nmap <D-d> <Plug>(Textmanip.duplicate_selection_n)
-
-vmap <C-j> <Plug>(Textmanip.move_selection_down)
-vmap <C-k> <Plug>(Textmanip.move_selection_up)
-vmap <C-h> <Plug>(Textmanip.move_selection_left)
-vmap <C-l> <Plug>(Textmanip.move_selection_right)
+"vmap <D-d> <Plug>(Textmanip.duplicate_selection_v)
+"nmap <D-d> <Plug>(Textmanip.duplicate_selection_n)
+"
+"vmap <C-j> <Plug>(Textmanip.move_selection_down)
+"vmap <C-k> <Plug>(Textmanip.move_selection_up)
+"vmap <C-h> <Plug>(Textmanip.move_selection_left)
+"vmap <C-l> <Plug>(Textmanip.move_selection_right)
 
 "}}}
 
