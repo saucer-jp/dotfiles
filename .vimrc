@@ -38,7 +38,6 @@ Bundle 'git://github.com/sophacles/vim-processing.git'
 
 Bundle 'git://github.com/vim-scripts/Lucius.git'
 Bundle 'git://github.com/vim-scripts/darkspectrum.git'
-Bundle 'git://github.com/2072/PHP-Indenting-for-VIm.git'
 
 "}}}
 
