@@ -66,7 +66,7 @@ set ruler
 " タブや改行を表示 (nolist:非表示)
 set list
 " どの文字でタブや改行を表示するかを設定
-set listchars=tab:>.,trail:\ ,extends:@,eol:$
+set listchars=tab:>.,trail:\ ,extends:@,eol:↲
 " 長い行を折り返さないで表示 (wrap:折り返す)
 set nowrap
 " 常にステータス行を表示
