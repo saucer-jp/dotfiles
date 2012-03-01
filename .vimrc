@@ -31,7 +31,7 @@ Bundle 'git://github.com/thinca/vim-ref.git'
 Bundle 'git://github.com/hokaccha/vim-css3-syntax.git'
 "Bundle 'git://github.com/tpope/vim-haml.git'
 Bundle 'git://github.com/cakebaker/scss-syntax.vim.git'
-Bundle 'git://github.com/dag/css_color.vim.git'
+"Bundle 'git://github.com/dag/css_color.vim.git'
 Bundle 'git://github.com/othree/html5.vim.git'
 Bundle 'git://github.com/pangloss/vim-javascript.git'
 Bundle 'git://github.com/sophacles/vim-processing.git'
@@ -505,7 +505,7 @@ nnoremap [General]gp :<C-u>Git push
 " for zencoding.vim {{{2
 let g:user_zen_expandabbr_key = '<C-Enter>'
 let g:user_zen_settings = {
-\  'lang' : 'jn', }
+\  'lang' : 'ja', }
 " }}}
 
 "---------------------------------------------------------------------------
