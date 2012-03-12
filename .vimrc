@@ -366,7 +366,7 @@ let g:gist_detect_filetype = 1
 "let g:gist_open_browser_after_post = 1
 "let g:gist_browser_command = 'firefox %URL% &amp;'
 let g:github_user = 'saucer-jp'
-let g:github_token = '87acad3afc7bfd92c154052d093d998f'
+:source \$HOME/Dropbox/work/saucer/vim/gist-vim-token.vim
 "}}}
 
 "---------------------------------------------------------------------------
