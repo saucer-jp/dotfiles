@@ -35,6 +35,7 @@ Bundle 'git://github.com/cakebaker/scss-syntax.vim.git'
 Bundle 'git://github.com/othree/html5.vim.git'
 Bundle 'git://github.com/pangloss/vim-javascript.git'
 Bundle 'git://github.com/sophacles/vim-processing.git'
+Bundle 'git://github.com/t9md/vim-quickhl.git'
 
 Bundle 'git://github.com/vim-scripts/Lucius.git'
 Bundle 'git://github.com/vim-scripts/darkspectrum.git'
@@ -365,8 +366,6 @@ autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
 let g:gist_detect_filetype = 1
 "let g:gist_open_browser_after_post = 1
 "let g:gist_browser_command = 'firefox %URL% &amp;'
-let g:github_user = 'saucer-jp'
-:source \$HOME/Dropbox/work/saucer/vim/gist-vim-token.vim
 "}}}
 
 "---------------------------------------------------------------------------
@@ -569,6 +568,15 @@ set viminfo+=!
 "vmap <C-l> <Plug>(Textmanip.move_selection_right)
 
 "}}}
+"
+"---------------------------------------------------------------------------
+" for quickhl.vim {{{2
+let g:quickhl_keywords = [
+  \ "MEMO",
+  \ "NOTE",
+  \ ]
+"}}}
+
 
 " }}}
 
@@ -594,6 +602,13 @@ command! -bar -bang -nargs=? -complete=file Scouter
 "autocmd User *.rb,*.erb,*.yml,*.haml set expandtab softtabstop=0 shiftwidth=2 tabstop=2
 "autocmd User *.scss,*.css,*.js set noexpandtab softtabstop=2 shiftwidth=2 tabstop=2
 " }}}
+
+" vimrc.local 外部ファイルの設定を読み込む {{{2
+if filereadable(expand('~/.vimrc.local'))
+  source ~/.vimrc.local
+endif
+" }}}
+
 
 " }}}
 
