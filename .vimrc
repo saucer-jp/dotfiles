@@ -9,6 +9,7 @@ filetype on
 " 使っているプラグイン {{{2
 "
 Bundle 'git://github.com/mattn/gist-vim.git'
+Bundle 'git://github.com/mattn/webapi-vim'
 "Bundle 'git://github.com/msanders/snipmate.vim.git'
 Bundle 'git://github.com/Shougo/vimfiler.git'
 Bundle 'git://github.com/motemen/git-vim.git'
@@ -363,6 +364,7 @@ autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
 "---------------------------------------------------------------------------
 " for Gist.vim {{{2
 "let g:gist_clip_command = 'xclip -selection clipboard'
+let g:gist_clip_command = 'pbcopy'
 let g:gist_detect_filetype = 1
 "let g:gist_open_browser_after_post = 1
 "let g:gist_browser_command = 'firefox %URL% &amp;'
@@ -604,9 +606,9 @@ command! -bar -bang -nargs=? -complete=file Scouter
 " }}}
 
 " vimrc.local 外部ファイルの設定を読み込む {{{2
-if filereadable(expand('~/.vimrc.local'))
-  source ~/.vimrc.local
-endif
+"if filereadable(expand('~/.vimrc.local'))
+"  source ~/.vimrc.local
+"endif
 " }}}
 
 
