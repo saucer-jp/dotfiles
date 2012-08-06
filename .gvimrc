@@ -12,9 +12,9 @@ set guifont=Osaka-mono:h14
 "set transparency=15        " 半透明
 set guioptions-=T          " ツールバー削除
 " ウインドウの幅
-set columns=230
+set columns=256
 " ウインドウの高さ
-set lines=60
+set lines=62
 " コマンドラインの高さ(GUI使用時)
 set cmdheight=2
 " 画面を黒地に白にする (次行の先頭の " を削除すれば有効になる)

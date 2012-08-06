@@ -40,6 +40,7 @@ Bundle 'git://github.com/t9md/vim-quickhl.git'
 
 Bundle 'git://github.com/vim-scripts/Lucius.git'
 Bundle 'git://github.com/vim-scripts/darkspectrum.git'
+Bundle 'git://github.com/lepture/vim-velocity.git'
 
 "}}}
 
@@ -577,6 +578,11 @@ let g:quickhl_keywords = [
   \ "MEMO",
   \ "NOTE",
   \ ]
+"}}}
+
+"---------------------------------------------------------------------------
+" for vim-velocity {{{2
+au BufRead,BufNewFile *.vm set ft=html syntax=velocity
 "}}}
 
 
