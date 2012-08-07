@@ -584,6 +584,11 @@ let g:quickhl_keywords = [
 " for vim-velocity {{{2
 au BufRead,BufNewFile *.vm set ft=html syntax=velocity
 "}}}
+"
+"---------------------------------------------------------------------------
+" for vim-processing {{{2
+au BufRead,BufNewFile *.pde set ft=javascript syntax=processing
+"}}}
 
 
 " }}}
